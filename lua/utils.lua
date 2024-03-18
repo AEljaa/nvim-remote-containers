@@ -38,7 +38,7 @@ function M.systemChecks()
 	if not (vim.fn.executable("docker")) then
 		error("must install docker for this functionality")
 	end
-	if not (M.exists(".devcontainer")) then
+	if not (M.exists(".devcontainer/")) then
 		error("Could not find .devcontainer folder")
 	end
 	if not (M.exists(".devcontainer/devcontainer.json")) then
